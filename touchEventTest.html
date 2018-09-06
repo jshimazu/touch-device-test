@@ -35,6 +35,20 @@
         console.log('handle window touchend');
     });
 
+    // mouseイベント
+    window.addEventListener('mousedown', (evt) => {
+        console.log('handle window mousedown');
+    });
+    window.addEventListener('mouseover', (evt) => {
+        console.log('handle window mouseover');
+    });
+    window.addEventListener('mousemove', (evt) => {
+        console.log('handle window mousemove');
+    })
+    window.addEventListener('mouseup', (evt) => {
+        console.log('handle window mouseup');
+    });
+
 
     // TODO② DOM要素にタッチイベントは発生するかどうかのテスト
     document.querySelector('#target').addEventListener('touchstart', (evt) => {
@@ -47,6 +61,20 @@
 
     document.querySelector('#target').addEventListener('touchmove', (evt) => {
         console.log('handle element touchend');
+    });
+
+    // mouseイベント
+    document.querySelector('#target').addEventListener('mousedown', (evt) => {
+        console.log('handle window mousedown');
+    });
+    document.querySelector('#target').addEventListener('mouseover', (evt) => {
+        console.log('handle window mouseover');
+    });
+    document.querySelector('#target').addEventListener('mousemove', (evt) => {
+        console.log('handle window mousemove');
+    })
+    document.querySelector('#target').addEventListener('mouseup', (evt) => {
+        console.log('handle window mouseup');
     });
 
     // TODO③ 各所にdebuggerをいれて複数タッチをどう取得できているかを確認
